@@ -1,15 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
-
-<h1>sekayu122</h1>
-<p>電子工作、3DCG、画像処理、mac mini自動化の記録。</p>
-
+	<main>
+		<h1>sekayu122</h1>
+		<p>電子工作、3DCG、画像処理、mac mini自動化の記録。</p>
+	</main>
 </Layout>
+
+<style>
+	main {
+		display: grid;
+		min-height: 100vh;
+		place-content: center;
+		padding: 2rem;
+		font-family: system-ui, sans-serif;
+	}
+
+	h1 {
+		margin: 0 0 0.5rem;
+		font-size: clamp(2rem, 8vw, 5rem);
+	}
+
+	p {
+		margin: 0;
+		font-size: 1.125rem;
+		line-height: 1.7;
+	}
+</style>
