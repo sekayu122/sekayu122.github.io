@@ -24,5 +24,4 @@ jobs:
       - name: Deploy with Astro
         uses: withastro/action@v3
         with:
-          node-version: 22.12.0
-	
+          node-version: '22.12.0'
